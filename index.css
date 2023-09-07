@@ -69,15 +69,15 @@ main {
 
 .main {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	background-color: #fff;
-	width: 70%;
+	width: 90%;
 	padding: 2rem;
 	border: 4px solid crimson;
 }
 
 .main div {
-	margin: 10px;
+	margin: 40px;
 }
 
 .display_image {
@@ -98,6 +98,8 @@ main {
 	.main {
 		flex-direction: column;
 		align-items: center;
-		width: 90%;
+	}
+	.main div {
+		margin: 10px;
 	}
 }

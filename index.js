@@ -1,5 +1,6 @@
 const currentDayOfTheWeek = document.getElementById("day");
 const currentUTCTime = document.getElementById("utc");
+const milliseconds = document.getElementById("milliseconds");
 const date = new Date();
 
 const daysOfTheWeek = [
@@ -16,11 +17,14 @@ const daysOfTheWeek = [
 const day = daysOfTheWeek[date.getDay()];
 currentDayOfTheWeek.innerText = day;
 
-// get current utc time
-const hours = date.getUTCHours().toString().padStart(2, "0"); // hours
-const minutes = date.getUTCMinutes().toString().padStart(2, "0"); // minutes
-const seconds = date.getUTCSeconds().toString().padStart(2, "0"); // seconds
+// get utc time
+let utcCounter = 0;
+let startTime = new Date().getTime(); // Get the current timestamp in milliseconds
 
-const utcTime = `${hours}:${minutes}:${seconds}`;
+function updateUtcCounter() {
+	let currentTime = new Date().getTime(); // Get the current timestamp in milliseconds
+	utcCounter = currentTime - startTime;
+	currentUTCTime.textContent = utcCounter;
+}
 
-currentUTCTime.innerText = utcTime;
+setInterval(updateUtcCounter, 1);
