@@ -17,14 +17,16 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding: 5px;
+	text-align: center;
 }
 
 .hero h1 {
 	font-size: 8vw;
 	font-family: "Orbitron", sans-serif;
 	text-transform: uppercase;
+	letter-spacing: 0.5em;
 	color: #dc143c;
+	padding: 10px;
 	-webkit-box-shadow: 0px 0px 95px 47px rgba(220, 20, 60, 0.8);
 	-moz-box-shadow: 0px 0px 95px 47px rgba(220, 20, 60, 0.8);
 	box-shadow: 0px 0px 95px 47px rgba(220, 20, 60, 0.8);
