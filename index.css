@@ -84,6 +84,7 @@ main {
 	padding: 20px;
 	border: 4px solid rgb(2, 2, 31);
 	background-color: rgb(2, 2, 31);
+	overflow-y: hidden;
 }
 .display_image img {
 	width: 100%;
