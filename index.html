@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="index.css"
+		/>
+		<title>HNG task one</title>
+	</head>
+
+	<body>
+		<!--hero section-->
+		<div class="hero">
+			<h1 data-testid="slackUserName">Rhoda Eboreime</h1>
+			<a
+				data-testid="githubURL"
+				href="https://github.com/ivioje/HNGx-Task-One"
+				target="_blank"
+				>GitHub URL</a
+			>
+		</div>
+
+		<!--body section-->
+		<main>
+			<div class="main">
+				<div class="display_image">
+					<img
+						src="assets/displayImage.jpeg"
+						alt="Rhoda Eboreime"
+						data-testid="slackDisplayImage"
+					/>
+				</div>
+
+				<div>
+					<div class="track">
+						<h3 data-testid="myTrack">Frontend Track</h3>
+					</div>
+
+					<div>
+						<h3 data-testid="currentDayOfTheWeek">
+							Current Day: <span id="day"></span>
+						</h3>
+						<h3 data-testid="currentUTCTime">
+							Current UTC Time: <span id="utc"></span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="index.js"></script>
+	</body>
+</html>
